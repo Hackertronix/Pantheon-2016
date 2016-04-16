@@ -25,42 +25,45 @@ import java.util.ArrayList;
  */
 public class Day2Fragment extends Fragment {
 
-    private static String day2events[]={"Classical & light music vocal solo",
+    private static String day2events[]={"Classical & Light Music Vocal Solo",
             "Beg Borrow Steal", "Air Crash",
-            "GOT Quiz","Crime Polis",
+            "Game Of Thrones Quiz","Crime Polis",
             "Solo Dance", "Sketch & Paint", "Beat The Heat",
             " Hindi Anthyakshari","Air Crash","Dumb Charades",
             "K'nataka Quiz"
-            , "Concept presentation",
+            , "Concept Presentation",
             "Street Play","Bomb Diffusion",
             "Tech-Expo",
-            "60Sec To Fame","Street Dance ","Gen. Quiz","Band Wars"};
+            "60 Seconds To Fame","Street Dance ","General Quiz","Band Wars"};
 
 
 
     // ADD DAY 2 EVENT DESCRIPTION IN THIS ARRAY IN ORDER
 
-    private  static  String[] day2description ={ "Solo event. Time limit of 2+1 min. Any form of Hindustani or Carnatic classical music. No karaoke. 15 singers shall move on to the 2nd round",
-            "2 in a team. No cell phones bikes or cash allowed. Total of 10 rounds. Further rules to be explained on spot",
-            "Team of 3 members. First round is written round. Top scoring teams move to final. Quiz is about Karnataka and Kannadigas. Cash prize for top 2 teams",
-            "3 per team. Prelims consists of two rounds. Questions pertaining to GOT TV series only (Season 1 to Season 5). Quiz master explains rules for finals.",
-            "3 per team. Crime scene provided. Definite number of rounds wherein clues of the crime scene are deciphered. Team that finishes all rounds wins.",
-            "Solo event. 3+1min. either western or eastern form of dance. No vulgarity.",
-            "solo event. Required materials to be brought by participants. Sheets shall be provided. On spot topics. Duration of 90 min.",
-            "Solo event. 2 rounds. No instruments allowed. Time limit is 2 min. Qualified participants will have beat box sessions of 90 seconds each.",
+    private  static  String[] day2description ={ "Solo event. Time limit of 2+1 minutes. Any form of Hindustani or Carnatic classical music. No karaoke. 15 singers shall move on to the 2nd round.",
+            "2 in a team. No cell phones bikes or cash allowed. Total of 10 rounds. Further rules to be explained on the spot.",
+            "Team of 3 members. First round is written. Top scoring teams move to final. Quiz is about Karnataka and Kannadigas. Cash prize for top 2 teams.",
+            "3 per team. Prelims consists of two rounds. Questions pertaining to Game Of Thrones TV series only (Season 1 to Season 5). Quiz master will explain the rules for finals.",
+            "3 per team. Crime scene provided. Definite number of rounds wherein clues of the crime are deciphered. Team that finishes all rounds wins.",
+            "Solo event. 3+1 minutes. Either western or eastern form of dance. No vulgarity.",
+            "Solo event. Required materials should be brought by participants. Sheets shall be provided. On the spot topics. Duration is 90 min.",
+            "Solo event. 2 rounds. No instruments allowed. Time limit is 2 minutes. Qualified participants will have beatbox sessions of 90 seconds each.",
             "3 per team. Prelims consist of four rounds where four teams will be selected. Finals consists of 3 rounds. Two winners will be rewarded.",
-            "Solo event with on spot registration. Common air crash rules apply. Series of elimination rounds. Rules explained by judge.",
-            "Max 3 members per team. Prelims round is included. Finals for top 6 teams. Common rules for dumb charades apply.",
+            "Solo event with on spot registration. Common Air Crash rules apply. Series of elimination rounds. Rules will be explained by judge.",
+            "Maximum of 3 members per team. Prelims round is included. Finals for top 6 teams. Common rules for Dumb Charades apply.",
             "Team of 3 members. First round is written round. Top scoring teams move to final. Quiz is about Karnataka and Kannadigas. Cash prize for top 2 teams.",
 
-            "Team of 2. Time limit of 4+2. Points rewarded for uniqueness of concept.",
-            "Max 12 persons per team. Time limit of 10+2 min. Props allowed, record music not allowed. Vulgarity results in disqualification.",
-            "2 per team in the first round with a duration of 45 min. Elimination round conducted. Round 2 is diffusion where 6 teams will move on to the finals.",
+            "Team of 2 members. Time limit of 4+2 minutes. Points rewarded for uniqueness of concept.",
+            "Max 12 members per team. Time limit of 10+2 minutes. Props allowed, recorded music not allowed. Vulgarity results in disqualification.",
+            "2 per team in the first round with a duration of 45 minutes. Elimination round conducted. Round 2 is diffusion where 6 teams will move on to the finals.",
             "Any type of robot is allowed. 3 per team. Best team selected based on robot and presentation.",
-            "Solo event. Time limit of 1 min. No vulgarity.",
-            "Round 1 shall be a show case round. Round 2 will be battle round. All rules of battle crew shall apply.",
+            "Solo event. Time limit of 1 minute. No vulgarity.",
+            "Round 1 shall be a showcase round. Round 2 will be battle round. All rules of battle crew shall apply.",
             "3 per team. Prelims is a written round. Quiz master shall explain rules.",
-            "3-10 in a team. 15+5 minutes(including setup) is given. No restriction on genre. 5-piece drum kit, mics, cable and  amplifier will be provided."};
+            "3-10 in a team. 15+5 minutes(including setup) is given. No restriction on genre. 5-piece drum kit, mics, cable and amplifier will be provided."
+
+
+    };
 
 
 
@@ -163,12 +166,11 @@ public class Day2Fragment extends Fragment {
 
             if (Build.VERSION.SDK_INT != 21) {
                 Typeface robotoMonoMedium = Typeface.createFromAsset(itemView.getContext().getAssets(), "fonts/RobotoMono-Medium.ttf");
-                Typeface robotoMonoRegular = Typeface.createFromAsset(itemView.getContext().getAssets(), "fonts/RobotoMono-Regular.ttf");
 
 
                 mEventTileTextView.setTypeface(robotoMonoMedium);
                 mEventDetailsTextView.setTypeface(robotoMonoMedium);
-                mVenueTextView.setTypeface(robotoMonoRegular);
+                mVenueTextView.setTypeface(robotoMonoMedium);
                 mTimeTextView.setTypeface(robotoMonoMedium);
             }
 
